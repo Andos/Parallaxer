@@ -1,0 +1,452 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\..\Inc\ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Anders Riggelsen\0"
+            VALUE "FileDescription", "Parallaxer\0"
+            VALUE "FileVersion", "2.05\0"
+            VALUE "InternalName", "Parallaxer\0"
+            VALUE "LegalCopyright", "Copyright © 2008 Anders Riggelsen\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Parallaxer.mfx\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "1, 0, 0, 6\0"
+            VALUE "SpecialBuild", "00000006\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+KPX_MAGICNUMBER RCDATA MOVEABLE PURE 
+BEGIN
+    0x2516, 0x5908
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#else
+EXO_ICON                BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#else
+EXO_IMAGE               BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_DEFAULTIMAGE$(EDITOR) BITMAP  DISCARDABLE     "default.bmp"
+#else
+EXO_DEFAULTIMAGE        BITMAP  DISCARDABLE     "default.bmp"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_ACTIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_ACTIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Set width",                   AID_actSetWidth
+        MENUITEM "Set height",                  AID_actSetHeight
+        MENUITEM "Set angle",                   AID_actSetAngle, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Set offset",                  AID_actSetOffset
+        MENUITEM "Set Z-Length",                AID_actSetZLength
+        MENUITEM SEPARATOR
+        POPUP "Resampling"
+        BEGIN
+            MENUITEM "On",                          AID_actSetResampleOn
+            MENUITEM "Off",                         AID_actSetResampleOff
+        END
+        POPUP "Autoscroll"
+        BEGIN
+            MENUITEM "On",                          AID_actAutoScrollOn
+            MENUITEM "Off",                         AID_actAutoScrollOff
+        END
+        POPUP "Stationary"
+        BEGIN
+            MENUITEM "On",                          AID_actStationaryOn
+            MENUITEM "Off",                         AID_actStationaryOff
+        END
+        MENUITEM "Set center offset",           AID_actSetCenterOffset
+        MENUITEM SEPARATOR
+        POPUP "Lower repetition limit"
+        BEGIN
+            MENUITEM "Set value",                   AID_actLowerSetValue
+            MENUITEM SEPARATOR
+            MENUITEM "On",                          AID_actLowerOn
+            MENUITEM "Off",                         AID_actLowerOff
+        END
+        POPUP "Upper repetition limit"
+        BEGIN
+            MENUITEM "Set value",                   AID_actUpperSetValue
+            MENUITEM SEPARATOR
+            MENUITEM "On",                          AID_actUpperOn
+            MENUITEM "Off",                         AID_actUpperOff
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Load image",                  AID_actLoadImage
+        MENUITEM "Set animation frame",         AID_actSetFrame
+        MENUITEM SEPARATOR
+        MENUITEM "Attach object",               AID_actAttachObject
+        MENUITEM "Detach object",               AID_actDetachObject
+        MENUITEM SEPARATOR
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_EXPRESSIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Get width",                   EID_expGetWidth
+        MENUITEM "Get height",                  EID_expGetHeight
+        MENUITEM "Get angle",                   EID_expGetAngle, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Get offset",                  EID_expGetOffset
+        MENUITEM "Get animation frame",         EID_expGetAniFrame
+        MENUITEM "Get center offset",           EID_expGetCenterOffset
+        MENUITEM SEPARATOR
+        MENUITEM "Get line length at position", EID_expGetLineLength
+        MENUITEM "Get scroll coefficient at position", EID_expGetScrollCoeff
+        MENUITEM SEPARATOR
+        MENUITEM "Get lower repetition boundary", EID_expGetLowerValue
+        MENUITEM "Get upper repetition boundary", EID_expGetUpperValue
+        MENUITEM SEPARATOR
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_CONDITIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_CONDITIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    MENUITEM "",                            65535
+END
+#endif
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""..\\..\\Inc\\ccx.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KPX_MARK                "MF2"
+    KPX_NAME                "Parallaxer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetOffset        "Set offset = %0"
+    AP0ID_actSetOffset      "Set offset value"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetOffset        "Offset("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROP_TEXTTITLE      "Parallaxer"
+    IDS_OFFSET              "Offset"
+    IDS_PARALLAXIMAGE       "Parallax images"
+    IDS_QUALITY             "Resample (slow)"
+    IDS_DIRECTION           "Direction"
+    IDS_HORIZONTALDIR       "Horizontal"
+    IDS_VERTICALDIR         "Vertical"
+    IDS_ZLENGTH             "Z-Length"
+    IDS_PROP_BOUNDTITLE     "Repetition limits"
+    IDS_AUTOSCROLL          "Auto scroll"
+    IDS_LOWERBOUND          "Lower bound"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDST_OBJNAME            "Parallaxer"
+    IDST_AUTHOR             "Anders Riggelsen"
+    IDST_COPYRIGHT          "Copyright © 2010 Anders Riggelsen"
+    IDST_COMMENT            "Create 3D-like parallax effects from 2D source images."
+    IDST_HTTP               "http://www.andersriggelsen.dk"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetWidth         "Set width to: %0"
+    AP0ID_actSetWidth       "Enter a new width in pixels:"
+    AID_actSetHeight        "Set height to: %0"
+    AP0ID_actSetHeight      "Enter a new height in pixels:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetWidth         "Width("
+    EID_expGetHeight        "Height("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetResampleOn    "Set resampling: on"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetResampleOff   "Set resampling: off"
+    AID_actSetZLength       "Set Z-Length to: %0"
+    AP0ID_actSetZLength     "Enter the length of the line at the observers position. (# pixels)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetZLength       "ZLength("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actLoadImage        "Load image: %0 append = %1"
+    AP0ID_actLoadImage      "Enter a filename for an image file"
+    AP1ID_actLoadImage      "0 = Replace all images, 1 = Add frame to end of animation"
+    AID_actSetFrame         "Set animation frame = %0"
+    AP0ID_actSetFrame       "Animation frame"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetAniFrame      "AnimationFrame("
+    EID_expGetLineLength    "LineLengthAt("
+    EP0ID_expGetLineLength  "position of line"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actAttachObject     "Attach %0 on the parallax effect"
+    AP0ID_actAttachObject   "Select the object to be attached to the parallax effect"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetScrollCoeff   "ScrollCoeffAt("
+    EP0ID_expGetScrollCoeff "position of line"
+    EID_expGetLowerValue    "LowerBoundary("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actDetachObject     "Detach %0"
+    AP0ID_actDetachObject   "Select the object that should be detached"
+    AID_actAutoScrollOn     "Set autoscroll: On"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UPPERBOUND          "Upper bound"
+    IDS_STATIONATORY        "Stationatory at the Z-Length"
+    IDS_PROP_TEXTTITLE_DESC "Parallaxer Object - By Anders Riggelsen"
+    IDS_OFFSET_DESC         "The initial offset the parallax effect"
+    IDS_PARALLAXIMAGE_DESC  "The images in the parallax effect. You can have multiple to make an animation."
+    IDS_QUALITY_DESC        "Resampling the image will give a smoother image but requires more CPU and is therefore slower."
+    IDS_DIRECTION_DESC      "The direction the parallax effect will scroll in."
+    IDS_HORIZONTALDIR_DESC  "Horizontal direction"
+    IDS_VERTICALDIR_DESC    "Vertical direction"
+    IDS_ZLENGTH_DESC        "The length of the line that will scroll 1px when the offset changes 1px."
+    IDS_PROP_BOUNDTITLE_DESC 
+                            "The limits on how many times the parallax effect should repeat itself."
+    IDS_AUTOSCROLL_DESC     "When enabled, the parallaxer object will automatically scroll when your game scrolls."
+    IDS_LOWERBOUND_DESC     "Lower repetition boundary"
+    IDS_UPPERBOUND_DESC     "Upper repetition boundary"
+    IDS_STATIONATORY_DESC   "When enabled, the effect will remain stationatory around the Z-Length."
+    IDS_SMOOTHLINES         "Smoothing"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actAutoScrollOff    "Set autoscroll: Off"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actLowerSetValue    "Set lower repetition boundary: %0"
+    AP0ID_actLowerSetValue  "Enter a value - (must be lower than the upper boundary value)"
+    AID_actUpperSetValue    "Set upper repetition boundary: %0"
+    AP0ID_actUpperSetValue  "Enter a value - (must be higher than the lower boundary value)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actLowerOn          "Enable lower repetition boundary"
+    AID_actLowerOff         "Disable lower repetition boundary"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actUpperOn          "Enable upper repetition boundary"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actUpperOff         "Disable upper repetition boundary"
+    AID_actStationaryOn     "Set stationary mode: On"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetUpperValue    "UpperBoundary("
+    EID_expGetCenterOffset  "CenterOffset("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetCenterOffset  "Set center offset = %0"
+    AP0ID_actSetCenterOffset 
+                            "Set the offset relative to the object center at wich the effect should be centered around."
+    AID_actSetAngle         "Set angle to %0"
+    AP0ID_actSetAngle       "Enter an angle [0..360]"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actStationaryOff    "Set stationary mode: Off"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SMOOTHLINES_DESC    "Provides a more natural scroll on parallax-lines with equal lengths, but accumulates errors the more you scroll."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetAngle         "Angle("
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
