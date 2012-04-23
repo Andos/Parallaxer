@@ -42,7 +42,6 @@ short WINAPI DLLExport CreateRunObject(LPRDATA rdPtr, LPEDATA edPtr, fpcob cobPt
 	rdPtr->frames = new vector<ParallaxFrame>();
 	rdPtr->aObjects = new vector<AttachedObject>();
 
-	rdPtr->finalImage = new cSurface;
 	rdPtr->offset =	edPtr->offset;
 	rdPtr->roc.rcChanged = true;
 
